@@ -19,7 +19,7 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
     }}>
       <p><strong>Email:</strong> {email}</p>
       <p><strong>Date:</strong> {date || new Date().toLocaleString('fr-FR')}</p>
-      <p><strong>Source:</strong> Page Hero</p>
+      <p><strong>Source:</strong> Lékol </p>
     </div>
     <hr style={{ border: 'none', borderTop: '1px solid #ddd', margin: '20px 0' }} />
     <p style={{ color: '#666', fontSize: '14px' }}>
