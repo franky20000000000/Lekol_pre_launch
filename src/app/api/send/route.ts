@@ -26,7 +26,7 @@ export async function POST(request: Request) {
       `,
     });
 
-    // 2. Email à l'utilisateur
+    // 2. Email à l'utilisateur - VERSION QUI MARCHE
     await resend.emails.send({
       from: 'delivered@resend.dev', // ← CHANGEMENT ICI
       to: [email],
