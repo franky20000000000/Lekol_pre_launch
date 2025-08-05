@@ -38,7 +38,7 @@ const Contact7 = ({
 }: Contact7Props) => {
   return (
     <section className="bg-background p-10">
-      <div className="fixed top-0  flex mt-5 gap-4 justify-center items-center">
+      <div className="fixed top-0 w-full  flex mt-5 mb-5 gap-4 justify-center items-center">
           <Link href={"/"}>
             <Button
               variant="secondary"
@@ -59,7 +59,7 @@ const Contact7 = ({
           </Link>
         </div>
       <div className="container">
-        <div className="mb-14">
+        <div className="mb-14 mt-10">
           <h1 className="mb-3 mt-2 text-balance text-[#2B80F6] text-3xl font-semibold md:text-4xl">
             {title}
           </h1>
