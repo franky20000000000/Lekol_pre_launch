@@ -1,4 +1,7 @@
 import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 interface Contact7Props {
   title?: string;
@@ -19,25 +22,45 @@ interface Contact7Props {
 
 const Contact7 = ({
   title = "Contact Us",
-  description = "Contact the support team at Shadcnblocks.",
+  description = "Laissez nous un message en cas d'incomprehension.",
   emailLabel = "Email",
-  emailDescription = "We respond to all emails within 24 hours.",
-  email = "example@shadcnblocks.com",
-  officeLabel = "Office",
-  officeDescription = "Drop by our office for a chat.",
-  officeAddress = "1 Eagle St, Brisbane, QLD, 4000",
-  phoneLabel = "Phone",
-  phoneDescription = "We're available Mon-Fri, 9am-5pm.",
-  phone = "+123 456 7890",
-  chatLabel = "Live Chat",
-  chatDescription = "Get instant help from our support team.",
-  chatLink = "Start Chat",
+  emailDescription = "Nous repondons 24hrs/24",
+  email = "cabreltiomene21@gmail.com",
+  officeLabel = "Notre bureau",
+  officeDescription = "Venez nous rencontrez en presentiel",
+  officeAddress = "Kotto,Douala",
+  phoneLabel = "Telephone",
+  phoneDescription = "Nous vous repondons entre 10hrs et 15hrs",
+  phone = "+237 694 210 071",
+  chatLabel = "Laissez un message",
+  chatDescription = "Discutez directement avec notre team",
+  chatLink = "Commencer a discuter",
 }: Contact7Props) => {
   return (
-    <section className="bg-background py-32">
+    <section className="bg-background p-10">
+      <div className="fixed top-0  flex mt-5 gap-4 justify-center items-center">
+          <Link href={"/"}>
+            <Button
+              variant="secondary"
+              className="group text-md flex w-fit items-center justify-center gap-2 rounded-full px-4 py-1 tracking-tight"
+            >
+              <span>Accueil</span>
+              <ArrowRight className="size-4 -rotate-45 transition-all ease-out group-hover:ml-3 group-hover:rotate-0" />
+            </Button>
+          </Link>
+          <Link href={"/about"}>
+            <Button
+              variant="default"
+              className="group text-md flex w-fit items-center justify-center gap-2 rounded-full px-4 py-1 tracking-tight"
+            >
+              <span>About</span>
+              <ArrowRight className="size-4 -rotate-45 transition-all ease-out group-hover:ml-3 group-hover:rotate-0" />
+            </Button>
+          </Link>
+        </div>
       <div className="container">
         <div className="mb-14">
-          <h1 className="mb-3 mt-2 text-balance text-3xl font-semibold md:text-4xl">
+          <h1 className="mb-3 mt-2 text-balance text-[#2B80F6] text-3xl font-semibold md:text-4xl">
             {title}
           </h1>
           <p className="text-muted-foreground max-w-xl text-lg">
